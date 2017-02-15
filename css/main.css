@@ -1,0 +1,207 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+}
+
+#fp-nav span{
+  background: #618fb7 !important;
+}
+
+#fp-nav ul li .fp-tooltip{
+  color: #618fb7 !important;
+}
+
+.overlay{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(209, 225, 239, 0.2);
+  z-index: -1;
+}
+
+.section{
+  text-align: center;
+  z-index: 1;
+    background: url(../img/bg.svg) center fixed no-repeat;
+    background-size: 800px;
+}
+
+.arrow-wrap{
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  width: auto;
+  right: 0;
+  margin: 0 auto;
+  text-decoration: none;
+  color: #333030;
+  text-align: center;
+  z-index: 6;
+}
+
+.arrow-wrap:hover .toast{
+  opacity: 1;
+}
+
+.arrow-wrap i{
+  position: relative;
+  font-size: 54px;
+}
+
+.arrow-wrap .toast{
+  font-size: 18px;
+  line-height: 2rem;
+  font-weight: lighter;
+  font-family: concert One;
+  pointer-events: none;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+.title-wrap{
+    margin: auto;
+    width: 100%;
+    perspective: 1000px;
+}
+
+.title-wrap h4 {
+      display: inline-block;
+      font-family: 'Concert One', cursive;
+      margin: 0;
+      padding: 8px 18px;
+      border-radius: 4px;
+      font-weight: lighter;
+      letter-spacing: 2px;
+      font-size: 20px;
+      background-color: rgba(218, 230, 206, 0.8);
+      color: #333030;
+    }
+
+.arrow-content {
+    width: 72px;
+    height: 54px;
+    border: 4px solid #333030;
+    margin: 0 auto;
+    box-sizing: content-box;
+  }
+
+@media(max-width: 520px){
+  .title-wrap h4{
+    font-size: 14px
+  }
+}
+
+@media(max-width: 360px) {
+  .title-wrap h4{
+    font-size: 12px;
+  }
+}
+
+h1{
+  font-family: 'Black Ops One';
+  font-size: 82px;
+  font-weight: lighter;
+  line-height: 82px;
+  margin: 28px 0;
+  color: rgb(97, 143, 183);
+  perspective: 1000px;
+}
+
+@media(max-width: 720px) {
+  h1 {
+    font-size: 56px;
+    line-height: 56px;
+  }
+}
+
+@media(max-width: 520px) {
+  h1{
+    font-size: 38px;
+    line-height: 38px;
+  }
+}
+
+@media(max-width: 360px) {
+  h1{
+    font-size: 30px;
+    line-height: 30px;
+  }
+}
+
+b {
+  display: inline-block;
+  text-decoration: overline;
+  box-shadow: 0 14px 13px -9px rgba(0,0,0,0.4);
+  background: rgba(255,255,255,0.9);
+  animation: tada 2s infinite;
+}
+
+b:nth-child(1){
+  animation-delay: 100ms;
+}
+
+b:nth-child(2) {
+  animation-delay: 500ms;
+}
+
+b:nth-child(3) {
+  animation-delay: 300ms;
+}
+
+b:nth-child(4){
+  animation-delay: 800ms;
+}
+
+b:nth-child(5){
+  animation-delay: 0ms;
+}
+
+b:nth-child(6){
+  animation-delay: 200ms;
+}
+
+b:nth-child(7){
+  animation-delay: 400ms;
+}
+
+b:nth-child(8){
+  animation-delay: 600ms;
+}
+
+b:nth-child(9){
+  animation-delay: 150ms;
+}
+
+b:nth-child(10){
+  animation-delay: 700ms;
+}
+
+b:nth-child(11){
+  animation-delay: 240ms;
+}
+
+@keyframes tada {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+
+  10%, 20% {
+    transform: scale3d(.9, 1.1, .8) rotate3d(0, 0, 1, -3deg);
+  }
+
+  30%, 50%, 70%, 90% {
+    transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 3deg);
+  }
+
+  40%, 60%, 80% {
+    transform: scale3d(.9, 1.1, .8) rotate3d(0, 0, 1, -3deg);
+  }
+
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+}
