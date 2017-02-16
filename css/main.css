@@ -225,6 +225,22 @@ b:nth-child(11){
   letter-spacing: 5px;
 }
 
+@media (max-width:590px) {
+  #section1 h1{
+    font-size: 38px;
+    line-height: 38px;
+    margin: 22px 0;
+  }
+}
+
+@media (max-width:440px) {
+  #section1 h1{
+    font-size: 28px;
+    line-height: 28px;
+    margin: 20px 0;
+  }
+}
+
 hr{
   width: 52px;
   height: 2px;
@@ -242,7 +258,7 @@ hr{
   border: 3px dashed #333030;
   border-radius: 8px;
   color: #333030;
-  margin: 0 20px;
+  margin: 20px;
   text-decoration: none;
 }
 
@@ -263,6 +279,43 @@ hr{
   margin: 10px 0;
 }
 
+@media (max-width:590px) {
+  .category-wrapper a{
+    width: 180px;
+    margin: 10px;
+  }
+
+  .category-logo {
+    height: 48px;
+  }
+
+  .category-logo i{
+    font-size: 48px;
+  }
+
+  .category-wrapper h4 {
+    font-size: 16px;
+  }
+}
+
+@media (max-width:440px) {
+  .category-wrapper a{
+    width: 120px;
+    margin: 10px;
+  }
+
+  .category-logo {
+    height: 38px;
+  }
+
+  .category-logo i{
+    font-size: 38px;
+  }
+
+  .category-wrapper h4 {
+    font-size: 12px;
+  }
+}
 
 /***********ANIMATION USED*************/
 
