@@ -2,12 +2,27 @@
   box-sizing: border-box;
 }
 
+body{
+  background: url(../img/lines.svg) center;
+}
+
 #fp-nav span{
-  background: #618fb7 !important;
+  background: #333030 !important;
 }
 
 #fp-nav ul li .fp-tooltip{
-  color: #618fb7 !important;
+  color: #333030 !important;
+}
+
+#section1 .fp-tableCell{
+  vertical-align: top;
+  text-align: center;
+}
+
+@media (max-width:440px) {
+  #fp-nav.right{
+    right: 5px !important;
+  }
 }
 
 /**************SECTION FIRST*****************/
@@ -16,6 +31,7 @@
   text-align: center;
   background: url(../img/bg.svg) center fixed no-repeat;
   background-size: 800px;
+  background-color: tranparent;
 }
 
 @media(max-width: 720px){
@@ -118,11 +134,11 @@ b:nth-child(11){
 
 .title-wrap h4 {
       display: inline-block;
-      font-family: 'Concert One', cursive;
+      font-family: 'Open Sans Condensed', sans-serif;
       margin: 0;
       padding: 8px 18px;
       border-radius: 4px;
-      font-weight: lighter;
+      font-weight: bolder;
       letter-spacing: 2px;
       font-size: 20px;
       background-color: rgba(218, 230, 206, 0.8);
@@ -164,6 +180,15 @@ b:nth-child(11){
     box-sizing: content-box;
   }
 
+.arrow-wrap:hover .toast{
+  opacity: 1;
+}
+
+.arrow-wrap i{
+  position: relative;
+  font-size: 54px;
+}
+
 @media(max-width: 360px){
   .arrow-content{
     width: 52px;
@@ -172,15 +197,6 @@ b:nth-child(11){
   .arrow-wrap i{
     font-size: 34px;
   }
-}
-
-.arrow-wrap:hover .toast{
-  opacity: 1;
-}
-
-.arrow-wrap i{
-  position: relative;
-  font-size: 54px;
 }
 
 .arrow-wrap .toast{
@@ -195,9 +211,56 @@ b:nth-child(11){
 
 /*************SECOND SECTION****************/
 
-.demo{
-  height: 1800px;
-  background-color: pink;
+#section1{
+  background-color: transparent;
+}
+
+#section1 h1{
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 52px;
+  font-weight: bold;
+  line-height: 52px;
+  margin: 28px 0;
+  color: #333030;
+  letter-spacing: 5px;
+}
+
+hr{
+  width: 52px;
+  height: 2px;
+  background-color: #333030;
+  border-radius: 10px;
+}
+
+.category-wrapper{
+  margin: 72px 0;
+}
+.category-wrapper a{
+  display: inline-block;
+  width: 250px;
+  padding: 10px 0px;
+  border: 3px dashed #333030;
+  border-radius: 8px;
+  color: #333030;
+  margin: 0 20px;
+  text-decoration: none;
+}
+
+.category-wrapper a.on{
+  border-style: solid;
+}
+
+.category-logo {
+  width: 100%;
+  height: 72px;
+}
+
+.category-logo i{
+  font-size: 72px;
+}
+
+.category-wrapper h4 {
+  margin: 10px 0;
 }
 
 
