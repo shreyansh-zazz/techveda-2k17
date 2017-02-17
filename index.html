@@ -12,15 +12,23 @@
 
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.2/vendors/scrolloverflow.min.js" charset="utf-8"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.2/jquery.fullPage.min.js" charset="utf-8"></script>
-		<script src="js/main.js"></script>
 
 		<script src="https://use.fontawesome.com/04472230dd.js"></script>
+
+		<!--[if IE]>
+			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+			<![endif]-->
+		<script>
+			document.documentElement.className = 'js';
+		</script>
 
 		<!-- <link rel="shortcut icon" href="favicon.ico"> -->
 
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.2/jquery.fullPage.min.css">
+
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
 
 		<link rel="stylesheet" href="css/main.css">
 
@@ -29,7 +37,7 @@
 
 	</head>
 
-  <body>
+  <body class="loading">
 
 		<main id="fullpage">
 
@@ -57,28 +65,28 @@
 
 				<div class="category-wrapper">
 
-					<a href="" class="on">
+					<a href="#" class="on" data-which="technical">
 						<div class="category-logo">
 							<i class="fa fa-laptop" aria-hidden="true"></i>
 						</div>
 						<h4>Technical Events</h4>
 					</a>
 
-					<a href="">
+					<a href="#" data-which="quizes">
 						<div class="category-logo">
 							<i class="fa fa-pencil-square-o" aria-hidden="true"></i>
 						</div>
 						<h4>Quizes</h4>
 					</a>
 
-					<a href="">
+					<a href="#" data-which="gaming">
 						<div class="category-logo">
 							<i class="fa fa-gamepad" aria-hidden="true"></i>
 						</div>
 						<h4>Gaming Events</h4>
 					</a>
 
-					<a href="">
+					<a href="#" data-which="other">
 						<div class="category-logo">
 							<i class="fa fa-info-circle" aria-hidden="true"></i>
 						</div>
@@ -87,10 +95,105 @@
 
 				</div>
 
+				<div class="slide-wrapper">
+
+					<div class="technical page showing">
+
+						<div class="row">
+							<div class="event">
+								<h3>Web Houdini</h3>
+								<p class="desc">Let's see how you design a Webpage.</p>
+								<ul>
+									<li>Single Participation</li>
+									<li>HTML & CSS knowledge required</li>
+									<li>Registration fee: 30/-</li>
+								</ul>
+							</div>
+							<div class="event">
+								<h3>Code Conference</h3>
+								<p class="desc">How well you code? Let's find out.</p>
+								<ul>
+									<li>Participate with team of 2</li>
+									<li>Programs in C or C++</li>
+									<li>Registration fee: 80/- per team</li>
+								</ul>
+							</div>
+							<div class="event">
+								<h3>Let us Quiz</h3>
+								<p class="desc">Quiz based on C, C++ and Java.</p>
+								<ul>
+									<li>Single Participation</li>
+									<li>Basic Knowledge of C, C++ and Java</li>
+									<li>Registration fee: 25/-</li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="event">
+								<h3>Net Crunch Networking</h3>
+								<p class="desc">Quiz based on Computer Networking.</p>
+								<ul>
+									<li>Single Participation</li>
+									<li>Computer Networking knowledge required</li>
+									<li>Registration fee: 30/-</li>
+								</ul>
+							</div>
+							<div class="event">
+								<h3>Key Quiz</h3>
+								<p class="desc">Quiz based on Keyboard shortcuts.</p>
+								<ul>
+									<li>Single Participation</li>
+									<li>Knowledge about keyboard shorcuts</li>
+									<li>Registration Fee: 20/-</li>
+								</ul>
+							</div>
+							<div class="event">
+								<h3>Identify the Tech</h3>
+								<p class="desc">How well you know your tech?</p>
+								<ul>
+									<li>Single Participation</li>
+									<li>Tech picture will be shown and you have to guess</li>
+									<li>Registration fee: 25/-</li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="event">
+								<h3>Type Racer</h3>
+								<p class="desc">How fast you type?</p>
+								<ul>
+									<li>Single Participation</li>
+									<li>Familiar with keyboard.</li>
+									<li>Registration fee: 30/-</li>
+								</ul>
+							</div>
+						</div>
+
+					</div>
+
+					<div class="quizes page">
+						<div class="two">ONE</div>
+					</div>
+
+					<div class="gaming page">
+						<div class="three">ONE</div>
+					</div>
+
+					<div class="other page">
+						<div class="one">ONE</div>
+					</div>
+
+				</div>
 
 			</section>
 
 		</main>
+
+		<script src="js/imagesloaded.pkgd.min.js"></script>
+
+		<script src="js/main.js"></script>
 
   </body>
 </html>
