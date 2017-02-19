@@ -317,13 +317,16 @@ hr{
 }
 
 .event{
-  width: 300px;
-  background: #333030;
-  text-align: left;
-  padding: 15px;
-  border-radius: 4px;
-  letter-spacing: 1px;
-  color: #fff;
+ display: flex;
+ width: 300px;
+ background: #333030;
+ text-align: left;
+ padding: 15px;
+ border-radius: 4px;
+ letter-spacing: 1px;
+ color: #fff;
+ flex-direction: column;
+ justify-content: space-between;
 }
 
 .event h3,.event p{
@@ -397,6 +400,31 @@ hr{
   .category-wrapper h4 {
     font-size: 12px;
   }
+}
+
+.register{
+ display: block;
+ padding: 10px 0;
+ color: #333030;
+ margin: 0px auto;
+ background-color: #fff;
+ text-decoration: none;
+ text-align: center;
+ font-weight: bold;
+ width: 100%;
+}
+
+.me{
+ margin: 24px 0;
+ color: #333030;
+ font-size: 16px;
+ font-weight: 900;
+ letter-spacing: 2px;
+ text-decoration: none;
+}
+
+.me:hover{
+ text-decoration: underline;
 }
 
 /***********ANIMATION USED*************/
